@@ -1,7 +1,8 @@
 var groveSensor = require('jsupm_grove');
 
+var sensor_pin = process.argv[2];
 // Create the temperature sensor object using AIO pin 0
-var temp = new groveSensor.GroveTemp(1);
+var temp = new groveSensor.GroveTemp(sensor_pin);
 console.log(temp.name());
 
 // Read the temperature ten times, printing both the Celsius and
