@@ -9,10 +9,10 @@ console.log(temp.name());
 // equivalent Fahrenheit temperature, waiting one second between readings
 var i = 0;
 
-console.log("yo:"+temp.value());                                                                                                                                                                
+//console.log("yo:"+temp.value());                                                                                                                                                                
                                                                                                                                                                                                 
                                                                                                                                                                                                 
-console.log(temp.value());                                                                                                                                                                      
+//console.log(temp.value());                                                                                                                                                                      
 var waiting = setInterval(function() {                                                                                                                                                          
         var celsius = temp.value();                                                                                                                                                             
         var fahrenheit = celsius * 9.0/5.0 + 32.0;                                                                                                                                              
@@ -20,4 +20,4 @@ var waiting = setInterval(function() {
             Math.round(fahrenheit) + " degrees Fahrenheit");                                                                                                                                    
         i++;                                                                                                                                                                                    
         if (i == 10) clearInterval(waiting);                                                                                                                                                    
-        }, 20000); 
+        }, 25000); 
